@@ -204,6 +204,10 @@ def get_args():
                     metavar="UA", type=str, default='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
                     help="Set a custom user agent")
 
+    ap.add_argument("--proxy",
+                    metavar="PROXY", type=str, default='http://127.0.0.1:2020',
+                    help="Set http proxy, default is http://127.0.0.1:2020")
+
     args = vars(ap.parse_args())
 
     # takes a comma seperated lost of cookie files and loads them into a cookie jar

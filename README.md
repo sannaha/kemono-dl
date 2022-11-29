@@ -19,6 +19,11 @@ A downloader tool for kemono.party and coomer.party.
 `--cookies FILE`  
 Takes in a cookie file or a list of cookie files separated by a comma. Used to get around the DDOS protection. Your cookie file must have been gotten while logged in to use the favorite options.  
 
+## Proxy
+
+`--proxy PROXY`  
+Set http proxy, default is `http://127.0.0.1:2020`.  
+
 ## What posts to download
 
 `--links LINKS`  
@@ -147,7 +152,7 @@ The time in seconds to wait after being ratelimited (default: 120)
 
 The pattern options allow you to modify the file path and file name using variables from the post. `--dirname-pattern` is the base file path for all post files. 
 All file name patterns are appended to the end of the `--dirname-pattern`. File name patterns may also contain sub folder paths specific to that type of file such as with the default pattern for `--inline-filename-pattern`.  
-  
+
 All variables referring to dates are controlled by `--date-strf-pattern`. Standard python datetime strftime() format codes can be found [here](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes).
 
 ### All Options
